@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UFT-8">
+    <meta name ="viewpoint" content="width=device-width, initial-scale=1">
+    <link rel ="stylesheet" href="style.css">
+    <title> Create Account </title>
+</head>
+<body>
+    
+    <div class="container">
+        
+        <form action="" class="formulario" id="formulario"> 
+            <p class="titulo">Create Account </p>
+            <div class="form_input" id="nombre-div" style="position: relative;">
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" required/>
+                <img src="images/error-icon.svg" id="er1" class="iconos ok1 oculto">
+                <img src="images/success-icon.svg" id="ok1" class="iconos er1 oculto">
+                <small style="color: red;" class="oculto" id="txt-err1"> Rellene este campo</small>
+            </div>  
+            <div class="form_input" id="email-div" style="position: relative;">
+                <label for="email">Email</label>
+                <input type="email" id="email" required/>
+                <img src="images/error-icon.svg" id="er2" class="iconos ok2 oculto">
+                <img src="images/success-icon.svg" id="ok2" class="iconos er2 oculto">
+                <small style="color: red;" class="oculto" id="txt-err2">Rellene este campo</small>
+                <br>
+            </div>
+            <div class="form_input" id="clave-div" style="position: relative;">
+                <label for="clave">Clave</label>
+                <input type="password" id="clave" required/>
+                <img src="images/error-icon.svg" id="er3" class="iconos ok3 oculto">
+                <img src="images/success-icon.svg" id="ok3" class="iconos er3 oculto">
+                <small style="color: red;" class="oculto" id="txt-err3">Rellene este campo</small>
+                <small style="color: red;" class="oculto" id="txt-err5">No debe tener más de 8 caracteres</small>
+
+                <br>
+            </div>
+            <div class="form_input" id="confirm_clave-div" style="position: relative;">
+                <label for="confirm_clave">Confirme su clave</label>
+                <input type="password" id="confirm_clave" required/>
+                <img src="images/error-icon.svg" id="er4" class="iconos ok4 oculto">
+                <img src="images/success-icon.svg" id="ok4" class="iconos er4 oculto">
+                <small style="color: red;" class="oculto" id="txt-err4">Rellene este campo</small>
+                <small style="color: red;" class="oculto" id="txt-err6">Las claves no coinciden</small>
+                <br>
+            </div>
+            <div class ="submit_button">
+                <input type="button" onclick="validar_formulario();" value="ENVIAR"/>
+                <br>
+            </div>
+        </form>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>

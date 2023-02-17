@@ -1,0 +1,108 @@
+/* Estilos para toda la web */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: rgba(36,41,51,255);
+}
+
+.container {
+    margin:auto;
+    margin-top: 15px;
+    max-width: 90%;
+}
+
+/* Estilos para el formulario */
+
+.formulario {
+    border: 1px solid rgb(108,116,148);
+    border-radius: 10px;
+    padding: 30px;
+    max-width: 400px;
+    margin: auto;
+    background: rgba(47,54,68,255);
+
+}
+
+.titulo{
+    font-weight: bold;
+    font-size: 30px;
+    text-align:left;
+    margin: 0px;
+    margin-bottom: 15px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;  
+}
+p{
+    color:rgb(162,177,214);
+}
+
+.form_input{
+    margin-bottom: 20px;
+}
+
+.form_input label {
+    display: block;
+    margin-bottom: 5px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(162,177,214);
+}
+
+.form_input input {
+    width: 100%;
+    border: 1px solid rgb(108,116,148);
+    border-radius: 2px;
+    height: 35px;
+}
+
+.submit_button input {
+    
+    background: rgba(108,99,255,255);
+    color:white;
+    font-weight: bold;
+    border-radius: 5px;
+    padding: 13px 140px;
+}
+
+.error {
+    color: red;
+    font-size: 14px;
+  }
+  
+  .icon {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-left: 10px;
+    vertical-align: middle;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  
+  .icon-check {
+    background-image: url(success-icon.svg);
+  }
+  
+  .icon-cross {
+    background-image: url(error-icon.svg);
+  }
+
+  .iconos {
+    position: absolute;
+    top: 33px;
+    right: 7px;
+  }
+
+  .oculto {
+    display: none !important;
+  }
+
+  .ok-green {
+    border: lime solid 1px !important;
+  }
+
+  .error-red {
+    border: red solid 1px !important;
+  }
+
